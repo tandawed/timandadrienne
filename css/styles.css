@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Milton-bold';
+  src: url('../milton-two.twobold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Milton';
+  src: url('../milton-two.two.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Typewritter';
+  src: url('../Lovelt__.ttf') format("opentype");
+}
+
+body {
+  background-image: url(../images/tanda.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Typewritter;
+  color: rgb(45, 44, 44);
+  text-shadow: 1px 1px #E7E7E9,
+  -1px 1px #E7E7E9,
+  1px -1px #E7E7E9,
+  -1px -1px #E7E7E9;
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    background-size: 1150px 767.5px;
+  }
+}
+
+#coming-soon {
+  float: right;
+  text-align: center;
+  margin-right: 7.5%;
+  margin-top: 2.5em;
+}
+
+h1 {
+  font-size: 9em;
+  font-family: Milton;
+  color: rgb(45, 44, 44);
+  text-shadow: 1px 1px #E7E7E9,
+  -1px 1px #E7E7E9,
+  1px -1px #E7E7E9,
+  -1px -1px #E7E7E9;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+  margin-top: 1.5em;
+}
+
+h5 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(45, 44, 44);
+  text-shadow: 1px 1px #E7E7E9,
+  -1px 1px #E7E7E9,
+  1px -1px #E7E7E9,
+  -1px -1px #E7E7E9;
+  padding: 0;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: 950px) {
+  #coming-soon {
+    margin-right: 5%;
+    margin-top: 1.5em;
+  }
+
+  h1 {
+    font-size: 7em;
+  }
+
+  h3, h4 {
+    font-size: 2em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  body {
+    margin: 0;
+    background-image: none;
+    background-color: #E7E7E9;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/tanda.png);
+    background-size: cover;
+    height: 8em;
+    border-bottom: 1px solid black;
+  }
+
+  #coming-soon {
+    float: none;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 580px) {
+  header {
+    background-size: 580px 387.086957px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h3, h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+}
