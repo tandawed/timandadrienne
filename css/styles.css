@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url(../images/tanda.png);
+  background-image: url(../images/tanda.jpg);
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -119,7 +119,7 @@ h6 {
   header {
     margin: 0;
     padding: 0;
-    background-image: url(../images/tanda.png);
+    background-image: url(../images/tanda.jpg);
     background-size: cover;
     height: 8em;
     border-bottom: 1px solid black;
