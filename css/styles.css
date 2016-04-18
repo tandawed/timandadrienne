@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'Milton-bold';
-  src: url('../milton-two.twobold.otf') format("opentype");
-}
-
-@font-face {
   font-family: 'Milton';
   src: url('../milton-two.two.otf') format("opentype");
 }
