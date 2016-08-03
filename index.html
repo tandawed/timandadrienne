@@ -6,17 +6,71 @@
     <title>Tim & Adrienne | 12/4/2016</title>
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Great+Vibes|Italianno' rel='stylesheet' type='text/css'>
+    <!-- jQuery & jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+
   </head>
   <body>
-    <header>
-    </header>
-    <div id="coming-soon">
-      <h1>Tim & Adrienne</h1>
-      <h3>December 4th, 2016</h3>
-      <h4>India House</h4>
-      <h5>1 Hanover Square</br>New York, NY</br>10004</h5>
+    <nav>
+      <ul>
+        <li>Venue</li>
+        <li><a id="hotel">Accommodations</a></li>
+        <li><a id="rsvp">RSVP</a></li>
+        <li>Registry</li>
+        <li><a id="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="us">
+      <div id="coming-soon">
+        <h1>Tim & Adrienne</h1>
+        <h3>December 4th, 2016</h3>
+      </div>
 
-      <a href="mailto:info@timandadrienne.com"><h6>info@timandadrienne.com</h6></a>
+      <div id="hotel-modal">
+        <div id="hotel-content">
+          <span id="close-hotel-modal">X</span>
+          <div class="hotel-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.4006975378807!2d-74.01576958506355!3d40.70919477933216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a10bc429a4b%3A0x5be1eab56a9257ff!2s8+Albany+St%2C+New+York%2C+NY+10006!5e0!3m2!1sen!2sus!4v1470196482973" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="hotel-info">
+          <img id="wLogo" src="images/WLogo.png">
+          <p>8 Albany Street</br> New York, NY</br> 10006</p>
+          </div>
+          <div class="hotel-blurb">
+            <p>
+              For your convenience we have requested a preferred rate on hotel rooms at </br>the W Hotel - Downtown for Saturday, December 3rd and Sunday, December 4th. </br></br>
+
+              All rooms overlook One World Trade, are convenient to the subway,
+              and are walking distance to India House. </br>
+            </br>
+              If you would like to reserve a room, </br>
+              please <a href="https://www.starwoodmeeting.com/events/start.action?id=1606155917&key=5CB3D2">CLICK HERE.</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div id="contact-modal">
+        <div id="contact-content">
+          <span id="close-contact-modal">X</span>
+          <div class="contact-blurb">
+            <p>
+              If you have any questions or need any help </br>
+              please feel free to contact us via email at</br>
+              <h2><a href="mailto:info@timandadrienne.com">info@timandadrienne.com</a></h2>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="rsvp-modal">
+        <div id="rsvp-content">
+          <span id="close-rsvp-modal">X</span>
+          <iframe src="https://docs.google.com/a/timhilton.net/forms/d/e/1FAIpQLSe58mBX3JILaT9wfXrpgTU35B0hvPkBAaorHxmWXoKwCW7JkQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+      </div>
     </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
