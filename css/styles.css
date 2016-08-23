@@ -121,7 +121,7 @@ h6 {
   margin-top: 1.5em;
 }
 
-#hotel-modal, #contact-modal, #rsvp-modal {
+#hotel-modal, #contact-modal, #rsvp-modal, #venue-modal, #registry-modal {
   position: fixed;
   display: none;
   width: 80%;
@@ -136,7 +136,7 @@ h6 {
   height: 80px;
 }
 
-#hotel-content, #contact-content {
+#hotel-content, #contact-content, #registry-content {
   padding: 50px;
   height: 220px;
   background-color: rgba(255, 255, 255, .9);
@@ -149,6 +149,16 @@ h6 {
 #rsvp-content {
   padding: 20px;
   height: 100%;
+  background-color: rgba(255, 255, 255, .9);
+  text-shadow: none;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 2px 14px 39px -9px rgba(59,57,59,0.6);
+}
+
+#venue-content {
+  height: 600px;
+  padding: 50px;
   background-color: rgba(255, 255, 255, .9);
   text-shadow: none;
   border: 2px solid black;
@@ -172,11 +182,36 @@ h6 {
   float: right;
 }
 
-.contact-blurb {
+.contact-blurb, .registry-blurb {
   margin-top: 50px;
 }
 
-#close-hotel-modal, #close-contact-modal, #close-rsvp-modal {
+.venue-blurb {
+  max-width: 55%;
+  float: right;
+  text-align: left;
+  padding-top: 0;
+  margin-top: -15px;
+}
+
+.venue-info {
+  float: left;
+  position: absolute;
+}
+
+.venue-map {
+  float: left;
+  position: absolute;
+  top: 400px;
+}
+
+#indiaHouse {
+  float: left;
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+#close-hotel-modal, #close-contact-modal, #close-rsvp-modal, #close-venue-modal, #close-registry-modal {
   position: absolute;
   top: 5px;
   left: 97.5%;

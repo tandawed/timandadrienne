@@ -15,17 +15,42 @@
   <body>
     <nav>
       <ul>
-        <li>Venue</li>
+        <li><a id="venue">Venue</a></li>
         <li><a id="hotel">Accommodations</a></li>
         <li><a id="rsvp">RSVP</a></li>
-        <li>Registry</li>
+        <li><a id="registry">Registry</a></li>
         <li><a id="contact">Contact</a></li>
       </ul>
     </nav>
     <div id="us">
+
       <div id="coming-soon">
         <h1>Tim & Adrienne</h1>
         <h3>December 4th, 2016</h3>
+      </div>
+
+    </div>
+
+      <div id="venue-modal">
+        <div id="venue-content">
+          <span id="close-venue-modal">X</span>
+
+          <div class="venue-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.607356464925!2d-74.01195548475219!3d40.70464437933275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1681a42aa1%3A0xfb51f4c36f704334!2sINDIA+HOUSE!5e0!3m2!1sen!2sus!4v1471981578810" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="venue-info">
+            <img id="indiaHouse" src="images/india-house.jpg">
+            <h2>India House</h2>
+            <p>1 Hanover Square</br> New York, NY</br> 10004</p>
+          </div>
+
+          <div class="venue-blurb">
+            <p>
+              The wedding is being held at India House (the former New York Cotten Exchange Building) in downtown Manhattan.</br>It is a short walk from the W hotel, and is easily accesible from the 4-5 and 2-3 trains at Wall Street.</br>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div id="hotel-modal">
@@ -49,9 +74,30 @@
               please <a href="https://www.starwoodmeeting.com/events/start.action?id=1606155917&key=5CB3D2">CLICK HERE.</a>
             </p>
           </div>
-
         </div>
       </div>
+
+      <div id="rsvp-modal">
+        <div id="rsvp-content">
+          <span id="close-rsvp-modal">X</span>
+          <iframe src="https://docs.google.com/a/timhilton.net/forms/d/e/1FAIpQLSe58mBX3JILaT9wfXrpgTU35B0hvPkBAaorHxmWXoKwCW7JkQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+      </div>
+
+      <div id="registry-modal">
+        <div id="registry-content">
+          <span id="close-registry-modal">X</span>
+          <div class="registry-blurb">
+            <p>
+              While gifts are not necessary, they are very much appreciated. </br></br>We have a registry with Crate & Barrel which can be found by searching our names <a href="http://www.crateandbarrel.com/gift-registry/">HERE</a>.</br>
+            </br>If you would rather donate to our honeymoon fund you can do so <a href="#">HERE</a></br>
+            </br>
+              Thank you in advance for your generosity!
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div id="contact-modal">
         <div id="contact-content">
           <span id="close-contact-modal">X</span>
@@ -64,13 +110,9 @@
           </div>
         </div>
       </div>
-      <div id="rsvp-modal">
-        <div id="rsvp-content">
-          <span id="close-rsvp-modal">X</span>
-          <iframe src="https://docs.google.com/a/timhilton.net/forms/d/e/1FAIpQLSe58mBX3JILaT9wfXrpgTU35B0hvPkBAaorHxmWXoKwCW7JkQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
-      </div>
-    </div>
+
+
+
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
