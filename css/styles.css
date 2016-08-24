@@ -130,7 +130,9 @@ a:hover {
   height: 80px;
 }
 
-#hotel-content, #contact-content, #registry-content {
+#hotel-content,
+#contact-content,
+#registry-content {
   padding: 50px;
   height: 220px;
   background-color: rgba(255, 255, 255, .9);
@@ -205,7 +207,11 @@ a:hover {
   margin-bottom: 25px;
 }
 
-#close-hotel-modal, #close-contact-modal, #close-rsvp-modal, #close-venue-modal, #close-registry-modal {
+#close-hotel-modal,
+#close-contact-modal,
+#close-rsvp-modal,
+#close-venue-modal,
+#close-registry-modal {
   position: absolute;
   top: 5px;
   left: 97.5%;

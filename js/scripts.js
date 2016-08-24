@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 $("#venue").on("click", function() {
-  console.log("You wanna know where the hotel is?");
+  console.log("You wanna know where the venue is?");
   $("#venue-modal").toggle();
   $('#hotel-modal').hide();
   $('#contact-modal').hide();
@@ -12,7 +12,7 @@ $("#venue").on("click", function() {
 });
 
 $("#close-venue-modal").on("click", function() {
-  console.log("Did you book find the venue?");
+  console.log("Did you find the venue?");
   $("#venue-modal").toggle();
 });
 
@@ -31,7 +31,7 @@ $("#close-hotel-modal").on("click", function() {
 });
 
 $("#registry").on("click", function() {
-  console.log("You wanna know where the hotel is?");
+  console.log("You wanna buy us stuff?");
   $("#venue-modal").hide();
   $('#hotel-modal').hide();
   $('#contact-modal').hide();
@@ -40,12 +40,12 @@ $("#registry").on("click", function() {
 });
 
 $("#close-registry-modal").on("click", function() {
-  console.log("Did you book find the venue?");
+  console.log("Did you buy us something good?");
   $("#registry-modal").toggle();
 });
 
 $("#contact").on("click", function() {
-  console.log("You wanna know where the hotel is?");
+  console.log("You think we're giving you our phone numbers or personal emails?");
   $("#contact-modal").toggle();
   $('#hotel-modal').hide();
   $('#rsvp-modal').hide();
@@ -54,12 +54,12 @@ $("#contact").on("click", function() {
 });
 
 $("#close-contact-modal").on("click", function() {
-  console.log("Did you book your hotel?");
+  console.log("Fat chance, not that dumb...");
   $("#contact-modal").toggle();
 });
 
 $("#rsvp").on("click", function() {
-  console.log("You wanna know where the hotel is?");
+  console.log("Letting us know if you can come or not?");
   $("#rsvp-modal").toggle();
   $('#contact-modal').hide();
   $('#hotel-modal').hide();
@@ -68,7 +68,7 @@ $("#rsvp").on("click", function() {
 });
 
 $("#close-rsvp-modal").on("click", function() {
-  console.log("Did you book your hotel?");
+  console.log("Are you coming?");
   $("#rsvp-modal").toggle();
 });
 
