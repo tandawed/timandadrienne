@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log("Ready for the wedding?");
 });
 
-$("#venue").on("click", function() {
+$(".venue").on("click", function() {
   console.log("You wanna know where the venue is?");
   $("#venue-modal").toggle();
   $('#hotel-modal').hide();
@@ -16,7 +16,7 @@ $("#close-venue-modal").on("click", function() {
   $("#venue-modal").toggle();
 });
 
-$("#hotel").on("click", function() {
+$(".hotel").on("click", function() {
   console.log("You wanna know where the hotel is?");
   $("#hotel-modal").toggle();
   $('#contact-modal').hide();
@@ -30,7 +30,7 @@ $("#close-hotel-modal").on("click", function() {
   $("#hotel-modal").toggle();
 });
 
-$("#registry").on("click", function() {
+$(".registry").on("click", function() {
   console.log("You wanna buy us stuff?");
   $("#venue-modal").hide();
   $('#hotel-modal').hide();
@@ -44,7 +44,7 @@ $("#close-registry-modal").on("click", function() {
   $("#registry-modal").toggle();
 });
 
-$("#contact").on("click", function() {
+$(".contact").on("click", function() {
   console.log("You think we're giving you our phone numbers or personal emails?");
   $("#contact-modal").toggle();
   $('#hotel-modal').hide();
@@ -58,7 +58,7 @@ $("#close-contact-modal").on("click", function() {
   $("#contact-modal").toggle();
 });
 
-$("#rsvp").on("click", function() {
+$(".rsvp").on("click", function() {
   console.log("Letting us know if you can come or not?");
   $("#rsvp-modal").toggle();
   $('#contact-modal').hide();
@@ -79,4 +79,12 @@ $("#us").on("click", function() {
   $('#hotel-modal').hide();
   $('#venue-modal').hide();
   $('#registry-modal').hide();
+})
+
+$(".hamburger").on("click", function() {
+  console.log("show the menu!");
+  $('.mobile-nav-expand').toggle();
+  $('.m-line').toggle();
+  $('.t-line').toggleClass('top-x');
+  $('.b-line').toggleClass('bottom-x');
 })
