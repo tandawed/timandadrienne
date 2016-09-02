@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'Milton';
-  src: url('../milton-two.two.otf') format("opentype");
-}
-
-@font-face {
   font-family: 'Typewriter';
   src: url('../Lovelt__.ttf') format("opentype");
 }
@@ -60,8 +55,8 @@ li {
 }
 
 h1 {
-  font-size: 9em;
-  font-family: Milton;
+  font-size: 6em;
+  font-family: 'Pinyon Script', cursive;
   color: rgb(45, 44, 44);
   text-shadow: 1px 1px #E7E7E9,
   -1px 1px #E7E7E9,
@@ -259,8 +254,6 @@ a:hover {
       background-size: 580px 387.086957px;
     }
 
-    h1 {font-family: Milton;}
-
   #desktop-nav {
     display: none;
   }
@@ -444,22 +437,29 @@ iframe {
       background-color: #E7E7E9;
     }
 
-    header {
-      margin: 0;
-      padding: 0;
-      background-image: url(../images/tanda.jpg);
-      background-size: cover;
-      height: 8em;
-      border-bottom: 1px solid black;
-    }
-
     #coming-soon {
       float: none;
       margin-left: 5%;
     }
 
+    #us {
+        background-image: none;
+    }
+    #us::after {
+        content: "";
+          background: url(../images/tanda.jpg);
+          opacity: 0.5;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+      }
+
   h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
 
   h3, h4 {
