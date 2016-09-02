@@ -125,6 +125,7 @@ a:hover {
   top: 60px;
   left: 10%;
   text-align: center;
+  z-index: 9999;
 }
 
 #wLogo {
@@ -246,7 +247,6 @@ a:hover {
   z-index: 1;
 }
 
-
 /* Begin Media Queries */
 @media screen and (max-width: 1150px) {
   #us {
@@ -254,7 +254,13 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 992px) {
+    header {
+      background-size: 580px 387.086957px;
+    }
+
+    h1 {font-family: Milton;}
+    
   #desktop-nav {
     display: none;
   }
@@ -358,35 +364,99 @@ a:hover {
   h6 {
     font-size: 1em;
   }
+
+#hotel-modal, #contact-modal, #rsvp-modal, #venue-modal, #registry-modal {
+        width: 90%;
+        height: 100%;
+        top: 20px;
+        left: 5%;
+        text-align: center;
+        z-index: 9999;
+    }
+
+#close-rsvp-modal, #close-venue-modal, #close-hotel-modal, #close-contact-modal, #close-registry-modal {
+        left: 93.5%;
+    }
+
+#venue-content {
+    height: auto;
+    padding: 10px;
 }
 
-@media screen and (max-width: 810px) {
-  body {
-    margin: 0;
-    background-image: none;
-    background-color: #E7E7E9;
-  }
-
-  header {
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/tanda.jpg);
-    background-size: cover;
-    height: 8em;
-    border-bottom: 1px solid black;
-  }
-
-  #coming-soon {
+#indiaHouse {
     float: none;
-    margin-left: 5%;
-  }
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
 }
-@media screen and (max-width: 580px) {
-  header {
-    background-size: 580px 387.086957px;
-  }
+
+.venue-info {
+    float: none;
+    position: relative;
 }
-@media screen and (max-width: 480px) {
+
+.venue-map {
+    float: none;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.venue-blurb {
+    max-width: 100%;
+    float: none;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#hotel-content {
+    padding: 10px;
+    height: auto;
+}
+
+.hotel-blurb {
+    text-align: center;
+    float: none;
+    max-width: 100%;
+}
+
+.hotel-info, .hotel-map {
+    float: none;
+}
+
+#rsvp-content, #registry-content {
+    padding: 10px;
+    height: 90%;
+}
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      margin: 0;
+      background-image: none;
+      background-color: #E7E7E9;
+    }
+
+    header {
+      margin: 0;
+      padding: 0;
+      background-image: url(../images/tanda.jpg);
+      background-size: cover;
+      height: 8em;
+      border-bottom: 1px solid black;
+    }
+
+    #coming-soon {
+      float: none;
+      margin-left: 5%;
+    }
+
   h1 {
     font-size: 5em;
   }
