@@ -166,13 +166,13 @@ a:hover {
 
 .hotel-info {
   float: left;
-  margin-left: 5%;
+  margin-left: 2.5%;
   margin-top: 2.5em;
 }
 
 .hotel-blurb {
   text-align: left;
-  max-width: 45%;
+  max-width: 35%;
   float: right;
 }
 
