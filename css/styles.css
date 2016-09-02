@@ -260,7 +260,7 @@ a:hover {
     }
 
     h1 {font-family: Milton;}
-    
+
   #desktop-nav {
     display: none;
   }
@@ -372,6 +372,7 @@ a:hover {
         left: 5%;
         text-align: center;
         z-index: 9999;
+        overflow: scroll;
     }
 
 #close-rsvp-modal, #close-venue-modal, #close-hotel-modal, #close-contact-modal, #close-registry-modal {
