@@ -5,7 +5,7 @@
 
 #us {
   background-image: url(../images/tanda.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
   top: 55px;
@@ -129,7 +129,6 @@ a:hover {
 }
 
 #hotel-content,
-#contact-content,
 #registry-content {
   padding: 50px;
   height: 250px;
@@ -138,6 +137,17 @@ a:hover {
   border: 2px solid black;
   border-radius: 6px;
   box-shadow: 2px 14px 39px -9px rgba(59,57,59,0.6);
+}
+
+#contact-content {
+    padding: 50px;
+    height: auto;
+    font-family: Arial;
+    background-color: rgba(255, 255, 255, .9);
+    text-shadow: none;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 2px 14px 39px -9px rgba(59,57,59,0.6);
 }
 
 #rsvp-content {
@@ -178,6 +188,10 @@ a:hover {
 
 .contact-blurb, .registry-blurb {
   margin-top: 50px;
+}
+
+.contact-blurb {
+    max-width: 90%;
 }
 
 .venue-blurb {
@@ -245,7 +259,7 @@ a:hover {
 /* Begin Media Queries */
 @media screen and (max-width: 1150px) {
   #us {
-    background-size: 1150px 767.5px;
+    background-size: cover;
   }
 }
 
@@ -370,6 +384,7 @@ a:hover {
 
 #close-rsvp-modal, #close-venue-modal, #close-hotel-modal, #close-contact-modal, #close-registry-modal {
         left: 93.5%;
+        font-family: Arial;
     }
 
 #venue-content {
@@ -450,11 +465,10 @@ iframe {
           background: url(../images/tanda.jpg);
           opacity: 0.5;
           top: 0;
-          left: 0;
+          left: -10%;
           bottom: 0;
           right: 0;
           position: absolute;
-          width: 100%;
           z-index: -1;
       }
 
