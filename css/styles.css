@@ -452,6 +452,9 @@ iframe {
       background-color: #E7E7E9;
     }
 
+    #rsvp-content {
+        overflow: scroll;
+    }
     #coming-soon {
       float: none;
       margin-left: 5%;
@@ -487,4 +490,5 @@ iframe {
   h6 {
     font-size: 1em;
   }
+
 }
